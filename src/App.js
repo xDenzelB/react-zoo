@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import Sign from './sign';
 
 function App() {
   const [moonSize, setMoonSize] = useState(1);
@@ -32,8 +33,10 @@ function App() {
         </div>
       </section>
       <section className='open-close'>
+        <Sign isOpen={isOpen} />
         <div>
-
+          <button onClick={() => setIsOpen(false)}>Closed Today!</button>
+          <button onClick={() => setIsOpen(true)}>Open!</button>
      
         </div>
       </section>
