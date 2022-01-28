@@ -5,6 +5,7 @@ import { useState } from 'react';
 function App() {
   const [moonSize, setMoonSize] = useState(1);
   const [sunSize, setSunSize] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
 
   const moonStyle = {
     fontSize: `${moonSize}rem`
@@ -30,10 +31,12 @@ function App() {
      
         </div>
       </section>
-      <div className='open-close'>
+      <section className='open-close'>
+        <div>
 
      
-      </div>
+        </div>
+      </section>
       <div className='zoo'>
 
      
