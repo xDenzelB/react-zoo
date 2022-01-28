@@ -7,6 +7,7 @@ function App() {
   const [moonSize, setMoonSize] = useState(1);
   const [sunSize, setSunSize] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
+  const [parade, setParade] = useState(['lama', 'dragon', 'dinosaur', 'kangaroo']);
 
   const moonStyle = {
     fontSize: `${moonSize}rem`
@@ -40,11 +41,15 @@ function App() {
      
         </div>
       </section>
-      <div className='zoo'>
-
+      <section className='zoo'>
+        <div>
+          <button>Lama</button>
+          <button>Dragon</button>
+          <button>Dinosaur</button>
+          <button>Kangaroo</button>
      
-      </div>
-
+        </div>
+      </section>
     </div>
   );
 }
