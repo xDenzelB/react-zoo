@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Sign from './sign';
 import ParadeList from './ParadeList';
-
+import { Component } from 'react/cjs/react.production.min';
 
 function App() {
   const [moonSize, setMoonSize] = useState(3);
@@ -27,7 +27,7 @@ function App() {
             <button onClick={() => setMoonSize(moonSize + 1)}>Moon powers ACTIVATE!!!</button>
             <button onClick={() => setSunSize(sunSize - 1)}>Moon blocks the sun!</button>
           </div>
-     
+    
         </div>
         <div className='sun'>
           <p style={sunStyle}>🌞</p>
@@ -42,7 +42,7 @@ function App() {
         <div className='buttons'>
           <button onClick={() => setIsOpen(false)}>Closed Today!</button>
           <button onClick={() => setIsOpen(true)}>Open!</button>
-     
+    
         </div>
       </section>
       <section className='zoo'>
@@ -52,11 +52,10 @@ function App() {
           <button onClick={() => setParade([...parade, 'dragon'])}>Dragon</button>
           <button onClick={() => setParade([...parade, 'dinosaur'])}>Dinosaur</button>
           <button onClick={() => setParade([...parade, 'kangaroo'])}>Kangaroo</button>
-     
+    
         </div>
       </section>
     </div>
   );
 }
-
 export default App;
